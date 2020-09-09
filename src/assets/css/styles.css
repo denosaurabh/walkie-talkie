@@ -1,0 +1,236 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --green: #2dd881;
+    --parrot-green: #aaf683;
+    --dark-green: #1a6641;
+
+    --orange: #ff5714;
+    --red: #ef233c;
+}
+
+body {
+    font-family: "Bungee", cursive;
+    text-align: center;
+
+    padding: 5% 10%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    height: fit-content;
+    margin: 0;
+    font-size: 4rem;
+
+    animation-name: colorFlicker;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+
+.secondary {
+    margin: 0;
+
+    color: var(--dark-green);
+}
+
+h2 {
+    color: var(--green);
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+span {
+    font-size: 1.3rem;
+    color: var(--green);
+    margin-bottom: 0.5rem;
+}
+
+/* Button */
+button {
+    outline: none;
+    border: none;
+
+    font-family: inherit;
+    font-family: 1.5rem;
+
+    padding: 0.5rem 1.3rem;
+    color: #fff;
+    border-radius: 10px;
+
+    transition: 0.15s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.07) translateY(-5%);
+}
+
+.send-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    text-align: left;
+    padding: 1rem;
+    padding-bottom: 0;
+
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+
+}
+
+
+
+/* BUTTONS & MORE */
+
+.sign-in,
+.log-in {
+    background-color: var(--dark-green);
+}
+
+.sign-in {
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+
+}
+
+.log-in {
+    margin-top: 2rem;
+}
+
+.sign-out {
+    background-color: var(--red);
+
+    margin-bottom: 5rem;
+}
+
+.danger {
+    font-size: 0.9rem;
+    color: var(--red);
+}
+
+.action {
+    color: var(--orange) !important;
+    margin-bottom: 2rem;
+}
+
+.send-button {
+    background-color: var(--dark-green);
+}
+
+.orange-button {
+    background-color: var(--orange);
+}
+
+.red-button {
+    background-color: var(--red);
+
+}
+
+/* Chat Room */
+.chat-room {
+    margin-top: 2rem;
+    background-color: var(--orange);
+}
+
+/* UL & LI */
+ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+
+li {
+    font-size: 1.2rem;
+    color: var(--green);
+    border: 1px solid var(--green);
+
+    padding: 0.4rem 1.3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+
+    transition: 0.4s;
+}
+
+li:hover {
+    background-color: var(--green);
+    color: #fff;
+
+    transform: scale(1.05) translateY(-5%);
+}
+
+/* INPUT & LABEL */
+label {
+    color: var(--dark-green);
+}
+
+input,
+input:focus {
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 1.6rem;
+
+    border-radius: 5px;
+    border: 2px solid var(--dark-green);
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--dark-green);
+}
+
+input::placeholder {
+    color: var(--dark-green);
+}
+
+.message-input {
+    margin-right: 1.5rem;
+
+    width: 80%;
+}
+
+
+/* Anchor */
+a,
+a:visited,
+a:link,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Text Selection */
+::selection {
+    background-color: var(--green);
+    color: #fff
+}
+
+
+@keyframes colorFlicker {
+    0% {
+        color: var(--parrot-green)
+    }
+
+    50% {
+        color: var(--orange)
+    }
+
+    100% {
+        color: var(--parrot-green)
+    }
+}

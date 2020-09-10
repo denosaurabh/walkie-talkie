@@ -7,7 +7,14 @@ Pre Credentials :=
 Email: user@gmail.com
 Password: user_password
 
+Email: user2@gmail.com
+Password: user2_password
+
 or you can sign up.
+
+### How to Chat?
+
+Share The url after making a new Chat Room to another user, and start chatting.:D
 
 ## Project setup
 
